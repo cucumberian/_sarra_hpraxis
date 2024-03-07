@@ -1,0 +1,181 @@
+.color-scheme {
+    --text-primary: #383838;
+    --header-bg: #383838;
+    --dark-white: #dadada;
+}
+
+.consts {
+    --header-height: 80px;
+    --font-size: 1.2rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition-duration: 0.3s;
+}
+
+p {
+    font-size: var(--font-size);
+}
+ul {
+    font-size: var(--font-size);
+}
+a {
+    font-size: 1var(--font-size);
+}
+
+/* HEADER */
+header {
+    background-color: var(--header-bg);
+    height: var(--header-height);
+}
+header > div {
+    max-width: 1440px;
+}
+.header__site_title {
+    text-decoration: none;
+    color: var(--dark-white);
+    font-weight: bold;
+    font-size: 36px;
+}
+.header__site_title:hover {
+    color: white;
+}
+.header__contacts {
+    gap: 20px;
+}
+.header__tel_logo {
+    width: 30px;
+    height: 30px;
+}
+.header__email {
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--dark-white);
+}
+.header__email:hover {
+    color: white;
+}
+
+.header_menu_list {
+    list-style: none;
+}
+.header_menu_list > li > a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    color: var(--dark-white);
+}
+.header_menu_list > li > a:hover {
+    color: white;
+}
+/* END HEADER */
+
+/* main */
+.main__width_container {
+    gap: 60px;
+    padding: 60px 20px;
+}
+/* end main */
+
+
+/* course page */
+.course_blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+
+.course_block {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 50px;
+    box-shadow: 0 0 20px 0px hsla(0, 0%, 96%, 0.0);
+}
+
+.book_title {
+    gap: 15px;
+    width: 100%;
+}
+.book_title__title a {
+    /* font-size: 24px; */
+    text-decoration: none;
+}
+.book_title__addon {
+    width: 100%;
+}
+
+.text_description {
+    gap: 10px;
+}
+
+.course_schedule .tel_icon {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+.course_requirements__content {
+    width: 100%;
+}
+
+/* end course */
+
+@media screen and (max-width: 1200px) {
+    .header__site_title {
+        font-size: 24px;
+    }
+
+    .header_menu_list > li > a {
+        padding: 5px 6px;
+        font-size: 16px;
+    }
+    .header__contacts {
+        gap: 5px;
+    }
+    .header__email {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header > div {
+        width: 100% !important;
+    }
+    .header__site_title {
+        font-size: 18px;
+    }
+    .header__contacts {
+        /* gap: 20px; */
+    }
+    .header_menu_list > li > a {
+        padding: 5px 6px;
+        font-size: 14px;
+    }
+    .header__tel_logo {
+        width: 20px;
+        height: 20px;
+    }
+    .header__email {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    .consts {
+    --font-size: 1.0rem;
+    }
+}
